@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router";
 
 const EventCard = ({ singleEvent }) => {
-  const { id, name, thumbnail, category, date, location, entry_fee } =
+  const { id, eventName, thumbnail, category, date, location, entry_fee } =
     singleEvent;
   return (
     <div>
@@ -11,7 +11,7 @@ const EventCard = ({ singleEvent }) => {
           <img src={thumbnail} alt="Shoes" />
         </figure>
         <div className="card-body">
-          <h2 className="card-title text-[20px]">{name}</h2>
+          <h2 className="card-title text-[20px]">{eventName}</h2>
           <div className="text-[18px] text-gray-500">
             <p>
               <span className="text-black">Category:</span> {category}
