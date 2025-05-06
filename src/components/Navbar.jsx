@@ -3,7 +3,7 @@ import { NavLink } from "react-router";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 px-0 ">
+    <div className="navbar bg-base-100 px-0 py-5 ">
       <div className="flex-1">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">

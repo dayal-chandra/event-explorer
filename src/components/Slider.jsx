@@ -12,7 +12,7 @@ import "swiper/css/navigation";
 
 const Slider = () => {
   return (
-    <div className="w-full  md:w-10/12 mx-auto">
+    <div className="w-full  md:w-10/12 mx-auto py-5">
       <Swiper
         modules={[Pagination, Navigation]}
         spaceBetween={30}

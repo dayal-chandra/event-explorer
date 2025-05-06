@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "thumbnail": "https://i.ibb.co.com/r2Yy2pjQ/pexels-brett-sayles-1340502.jpg",
+    "name": "Street Art Festival",
+    "category": "Art",
+    "date": "2025-08-03",
+    "location": "Old Dhaka Streets",
+    "entry_fee": "Free"
+  },
+  {
+    "id": 2,
+    "thumbnail": "https://i.ibb.co.com/ycF4g7fY/pexels-sevenstormphotography-1604991.jpg",
+    "name": "Modern Art Exhibition",
+    "category": "Art",
+    "date": "2025-06-20",
+    "location": "Chittagong Art Gallery",
+    "entry_fee": "Free"
+  },
+  {
+    "id": 3,
+    "thumbnail": "https://i.ibb.co.com/d0fpbXTr/pexels-tara-winstead-8386440.jpg",
+    "name": "AI & Robotics Summit",
+    "category": "Tech",
+    "date": "2025-07-05",
+    "location": "Silicon Valley, USA",
+    "entry_fee": "৳13200"
+  },
+  {
+    "id": 4,
+    "thumbnail": "https://i.ibb.co.com/jvJpzBMx/pexels-armin-rimoldi-5554299.jpg",
+    "name": "Local Artists Meetup",
+    "category": "Art",
+    "date": "2025-05-18",
+    "location": "Rajshahi Cultural Center",
+    "entry_fee": "৳550"
+  },
+  {
+    "id": 5,
+    "thumbnail": "https://i.ibb.co.com/BKfFmMj9/pexels-googledeepmind-17485632.jpg",
+    "name": "Tech Innovators Fair",
+    "category": "Tech",
+    "date": "2025-06-10",
+    "location": "Uttara Convention Hall, Dhaka",
+    "entry_fee": "৳3300"
+  },
+  {
+    "id": 6,
+    "thumbnail": "https://i.ibb.co.com/tw30PRR9/pexels-steve-1292241.jpg",
+    "name": "Watercolor Wonders",
+    "category": "Art",
+    "date": "2025-07-01",
+    "location": "Sylhet Art Studio",
+    "entry_fee": "৳1100"
+  },
+  {
+    "id": 7,
+    "thumbnail": "https://i.ibb.co.com/zWXBh2g7/pexels-rdne-7414283.jpg",
+    "name": "Startup Pitch Day",
+    "category": "Tech",
+    "date": "2025-06-25",
+    "location": "Innovation Hub, Dhaka",
+    "entry_fee": "৳1650"
+  },
+  {
+    "id": 8,
+    "thumbnail": "https://i.ibb.co.com/C3LpVnT2/pexels-shkrabaanthony-4348404.jpg",
+    "name": "Digital Art Workshop",
+    "category": "Art",
+    "date": "2025-06-12",
+    "location": "Khulna IT Park",
+    "entry_fee": "৳880"
+  },
+  {
+    "id": 9,
+    "thumbnail": "https://i.ibb.co.com/kVTWyk9n/pexels-davidmcbee-730547.jpg",
+    "name": "Blockchain for Beginners",
+    "category": "Tech",
+    "date": "2025-07-15",
+    "location": "Virtual (Online)",
+    "entry_fee": "৳2750"
+  },
+  {
+    "id": 10,
+    "thumbnail": "https://i.ibb.co.com/FFyr08W/pexels-kindelmedia-8566467.jpg",
+    "name": "FutureTech Conference 2025",
+    "category": "Tech",
+    "date": "2025-06-15",
+    "location": "Dhaka, Bangladesh",
+    "entry_fee": "৳5500"
+  }
+]
