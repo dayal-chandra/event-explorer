@@ -7,6 +7,7 @@ import Services from "../Pages/Services";
 import Login from "../Pages/Login";
 import Terms from "../Pages/Terms";
 import Privacy from "../Pages/Privacy";
+import EventDetails from "../Pages/EventDetails";
 
 export const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ export const router = createBrowserRouter([
       {
         path: "/privacy",
         Component: Privacy,
+      },
+      {
+        path: "/event-details/:id",
+        Component: EventDetails,
       },
     ],
   },

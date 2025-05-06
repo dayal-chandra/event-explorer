@@ -6,7 +6,8 @@
     "category": "Art",
     "date": "2025-08-03",
     "location": "Old Dhaka Streets",
-    "entry_fee": "Free"
+    "entry_fee": "Free",
+    "description": "Celebrate urban creativity with live street art, music, and community mural painting in the heart of Old Dhaka."
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "category": "Art",
     "date": "2025-06-20",
     "location": "Chittagong Art Gallery",
-    "entry_fee": "Free"
+    "entry_fee": "Free",
+    "description": "Explore bold expressions and abstract masterpieces by contemporary artists from across the country."
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "category": "Tech",
     "date": "2025-07-05",
     "location": "Silicon Valley, USA",
-    "entry_fee": "৳13200"
+    "entry_fee": "৳13200",
+    "description": "Join industry leaders as they showcase breakthroughs in AI, automation, and the future of robotics."
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "category": "Art",
     "date": "2025-05-18",
     "location": "Rajshahi Cultural Center",
-    "entry_fee": "৳550"
+    "entry_fee": "৳550",
+    "description": "A networking and showcase event for local painters, sculptors, and designers to share ideas and art."
   },
   {
     "id": 5,
@@ -42,7 +46,8 @@
     "category": "Tech",
     "date": "2025-06-10",
     "location": "Uttara Convention Hall, Dhaka",
-    "entry_fee": "৳3300"
+    "entry_fee": "৳3300",
+    "description": "Discover the next big tech ideas with startup showcases, product demos, and interactive tech sessions."
   },
   {
     "id": 6,
@@ -51,7 +56,8 @@
     "category": "Art",
     "date": "2025-07-01",
     "location": "Sylhet Art Studio",
-    "entry_fee": "৳1100"
+    "entry_fee": "৳1100",
+    "description": "A serene watercolor exhibit with live painting demos and technique workshops by professional artists."
   },
   {
     "id": 7,
@@ -60,7 +66,8 @@
     "category": "Tech",
     "date": "2025-06-25",
     "location": "Innovation Hub, Dhaka",
-    "entry_fee": "৳1650"
+    "entry_fee": "৳1650",
+    "description": "Watch entrepreneurs pitch their startup ideas to investors and get insights into launching a tech business."
   },
   {
     "id": 8,
@@ -69,7 +76,8 @@
     "category": "Art",
     "date": "2025-06-12",
     "location": "Khulna IT Park",
-    "entry_fee": "৳880"
+    "entry_fee": "৳880",
+    "description": "Learn the fundamentals of creating art with digital tools in this hands-on creative workshop."
   },
   {
     "id": 9,
@@ -78,7 +86,8 @@
     "category": "Tech",
     "date": "2025-07-15",
     "location": "Virtual (Online)",
-    "entry_fee": "৳2750"
+    "entry_fee": "৳2750",
+    "description": "An introductory course and webinar series about how blockchain works and its real-world applications."
   },
   {
     "id": 10,
@@ -87,6 +96,7 @@
     "category": "Tech",
     "date": "2025-06-15",
     "location": "Dhaka, Bangladesh",
-    "entry_fee": "৳5500"
+    "entry_fee": "৳5500",
+    "description": "Bangladesh's biggest tech conference on AI, cloud computing, IoT, and future innovations."
   }
 ]
