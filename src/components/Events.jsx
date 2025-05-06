@@ -1,15 +1,9 @@
-import React, { useEffect, useState } from "react";
+import { use } from "react";
 import EventCard from "./EventCard";
+import { AuthContext } from "../Provider/AuthProvider";
 
 const Events = () => {
-  const [events, setEvents] = useState([]);
-
-  useEffect(() => {
-    fetch("/events.json")
-      .then((res) => res.json())
-      .then((data) => setEvents(data))
-      .catch((error) => console.log(error));
-  }, []);
+  const { events } = use(AuthContext);
   return (
     <div className="py-20">
       <h1 className="text-center text-4xl font-bold">Upcoming Events</h1>
