@@ -1,7 +1,28 @@
-import React from "react";
-import { NavLink } from "react-router";
+import React, { use } from "react";
+import { Link, NavLink } from "react-router";
+import { AuthContext } from "../Provider/AuthProvider";
+import Swal from "sweetalert2";
 
 const Navbar = () => {
+  const { user, logOut } = use(AuthContext);
+
+  const handleLogout = () => {
+    logOut()
+      .then(() => {
+        Swal.fire({
+          title: "Log Out successful.",
+          icon: "success",
+        });
+      })
+      .catch((error) => {
+        Swal.fire({
+          title: `${error}`,
+
+          icon: "error",
+        });
+      });
+  };
+
   return (
     <div className="navbar bg-base-100 px-0 py-5 ">
       <div className="flex-1">
@@ -31,7 +52,7 @@ const Navbar = () => {
               <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink to="/about-us">About Us</NavLink>
+              <NavLink to="/my-profile">My Profile</NavLink>
             </li>
             <li>
               <NavLink to="/services">Services</NavLink>
@@ -49,14 +70,23 @@ const Navbar = () => {
             <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink to="/about-us">About Us</NavLink>
+            <NavLink to="/my-profile">My Profile</NavLink>
           </li>
           <li>
             <NavLink to="/services">Services</NavLink>
           </li>
-          <li>
-            <NavLink to="/login">Login</NavLink>
-          </li>
+
+          {user ? (
+            <Link>
+              <button className="btn" onClick={handleLogout}>
+                Logout
+              </button>
+            </Link>
+          ) : (
+            <NavLink to="/login">
+              <button className="btn">Login</button>
+            </NavLink>
+          )}
         </ul>
 
         <div className="w-10 rounded-full">

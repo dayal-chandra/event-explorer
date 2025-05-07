@@ -2,12 +2,14 @@ import { createBrowserRouter } from "react-router";
 import RootLayout from "../Layout/RootLayout";
 import ErrorPage from "../Pages/ErrorPage";
 import Home from "../Pages/Home";
-import AboutUs from "../Pages/AboutUs";
 import Services from "../Pages/Services";
 import Login from "../Pages/Login";
 import Terms from "../Pages/Terms";
 import Privacy from "../Pages/Privacy";
 import EventDetails from "../Pages/EventDetails";
+import Register from "../Pages/Register";
+import ForgotPassword from "../Pages/ForgotPassword";
+import MyProfile from "../Pages/MyProfile";
 
 export const router = createBrowserRouter([
   {
@@ -20,8 +22,8 @@ export const router = createBrowserRouter([
         Component: Home,
       },
       {
-        path: "/about-us",
-        Component: AboutUs,
+        path: "/my-profile",
+        Component: MyProfile,
       },
       {
         path: "/services",
@@ -30,6 +32,10 @@ export const router = createBrowserRouter([
       {
         path: "/login",
         Component: Login,
+      },
+      {
+        path: "/register",
+        Component: Register,
       },
       {
         path: "/terms",
@@ -42,6 +48,10 @@ export const router = createBrowserRouter([
       {
         path: "/event-details/:id",
         Component: EventDetails,
+      },
+      {
+        path: "/forgot",
+        Component: ForgotPassword,
       },
     ],
   },

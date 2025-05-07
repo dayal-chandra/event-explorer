@@ -68,32 +68,36 @@ const EventDetails = () => {
         </div>
       </div>
 
-      <div className="bg-base-200 mb-28 flex justify-center items-center pb-10">
+      <div className=" mb-28 flex justify-center items-center pb-10">
         <form
           onSubmit={handleAlert}
-          className="fieldset bg-green-100 border-base-300 rounded-box w-xs border p-10"
+          className="fieldset bg-base-200 border-base-300 rounded-box w-full max-w-sm mx-auto border py-10 px-5 my-5"
         >
-          <h1 className="text-[20px] font-bold">Reserve a seat</h1>
-
-          <label className="label">Name</label>
+          <h1 className="text-2xl font-bold text-center pb-5">
+            Reserve a Seat
+          </h1>
+          <label className="label text-[16px] text-black">Name</label>
           <input
             type="text"
-            className="input"
             name="name"
+            className="input w-full"
             placeholder="Your Name"
             required
           />
 
-          <label className="label">Email</label>
+          <label className="label text-[16px] text-black">Email</label>
           <input
             type="email"
-            className="input"
-            placeholder="Your Email"
+            className="input w-full"
+            placeholder="Email"
             required
           />
 
-          <button type="submit" className="btn btn-primary shadow-none mt-4:">
-            Reserve seat
+          <button
+            type="submit"
+            className="w-full px-8 py-3 mt-5 font-semibold rounded-md border text-[16px]"
+          >
+            Reserve Seat
           </button>
         </form>
       </div>
