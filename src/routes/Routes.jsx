@@ -28,7 +28,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "/services",
-        Component: Services,
+        element: (
+          <PrivateRoute>
+            <Services></Services>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/login",

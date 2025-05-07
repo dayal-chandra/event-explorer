@@ -5,7 +5,7 @@ import { AuthContext } from "../Provider/AuthProvider";
 const Events = () => {
   const { events } = use(AuthContext);
   return (
-    <div className="py-20">
+    <div className="py-20 md:px-5 bg-base-200">
       <h1 className="text-center text-4xl font-bold">Upcoming Events</h1>
       <p className="text-center pt-5 pb-10">
         In these upcoming events let's connect together. To know more visit view
