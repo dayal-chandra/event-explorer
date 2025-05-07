@@ -16,8 +16,6 @@ const AuthProvider = ({ children }) => {
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  console.log(user, loading);
-
   useEffect(() => {
     fetch("/events.json")
       .then((res) => res.json())
