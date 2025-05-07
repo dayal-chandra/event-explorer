@@ -8,14 +8,6 @@ const EventDetails = () => {
   const { id } = useParams();
   const singleEvent = events.find((eve) => eve.id === parseInt(id));
 
-  if (!singleEvent) {
-    return (
-      <div className="text-center mt-10">
-        <span className="loading loading-bars loading-xl"></span>
-      </div>
-    );
-  }
-
   const {
     eventName,
     thumbnail,

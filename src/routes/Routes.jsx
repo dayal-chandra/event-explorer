@@ -10,6 +10,7 @@ import EventDetails from "../Pages/EventDetails";
 import Register from "../Pages/Register";
 import ForgotPassword from "../Pages/ForgotPassword";
 import MyProfile from "../Pages/MyProfile";
+import PrivateRoute from "../Provider/PrivateRoute";
 
 export const router = createBrowserRouter([
   {
@@ -47,7 +48,11 @@ export const router = createBrowserRouter([
       },
       {
         path: "/event-details/:id",
-        Component: EventDetails,
+        element: (
+          <PrivateRoute>
+            <EventDetails></EventDetails>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/forgot",

@@ -57,9 +57,19 @@ const Navbar = () => {
             <li>
               <NavLink to="/services">Services</NavLink>
             </li>
-            <li>
-              <NavLink to="/login">Login</NavLink>
-            </li>
+            {user ? (
+              <Link>
+                <li>
+                  <button onClick={handleLogout}>Logout</button>
+                </li>
+              </Link>
+            ) : (
+              <NavLink to="/login">
+                <li>
+                  <button>Login</button>
+                </li>
+              </NavLink>
+            )}
           </ul>
         </div>
         <a className="text-3xl font-bold">EventNest</a>
@@ -90,11 +100,16 @@ const Navbar = () => {
         </ul>
 
         <div className="w-10 rounded-full">
-          <img
-            className="rounded-full"
-            alt="Tailwind CSS Navbar component"
-            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
-          />
+          {user ? (
+            <img
+              className="rounded-full"
+              alt="Tailwind CSS Navbar component"
+              title={user.displayName}
+              src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+            />
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </div>
