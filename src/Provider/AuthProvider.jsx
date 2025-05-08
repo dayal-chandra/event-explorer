@@ -3,6 +3,7 @@ import { app } from "../firebase/firebase.config";
 import {
   createUserWithEmailAndPassword,
   getAuth,
+  GoogleAuthProvider,
   onAuthStateChanged,
   signInWithEmailAndPassword,
   signOut,
@@ -10,6 +11,7 @@ import {
 export const AuthContext = createContext();
 
 const auth = getAuth(app);
+const provider = new GoogleAuthProvider();
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
@@ -56,6 +58,8 @@ const AuthProvider = ({ children }) => {
     signIn,
     loading,
     setLoading,
+    auth,
+    provider,
   };
 
   return <AuthContext value={authData}>{children}</AuthContext>;

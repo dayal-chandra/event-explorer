@@ -3,14 +3,25 @@ import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
 import Swal from "sweetalert2";
 import { Helmet } from "react-helmet-async";
-import { updateProfile } from "firebase/auth";
+import { signInWithPopup, updateProfile } from "firebase/auth";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { auth } from "../firebase/firebase.config";
 
 const Register = () => {
-  const { createUser, setUser } = use(AuthContext);
+  const { createUser, setUser, provider } = use(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
+
+  const googleSignin = () => {
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        console.log(result);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -145,6 +156,7 @@ const Register = () => {
         </div>
 
         <button
+          onClick={googleSignin}
           aria-label="Login with Google"
           type="button"
           className="flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-600 "
