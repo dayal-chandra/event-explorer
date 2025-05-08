@@ -1,14 +1,16 @@
-import React, { use } from "react";
+import React, { use, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
 import Swal from "sweetalert2";
 import { Helmet } from "react-helmet-async";
 import { updateProfile } from "firebase/auth";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Register = () => {
   const { createUser, setUser } = use(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -17,6 +19,16 @@ const Register = () => {
     const photo = form.photo.value;
     const email = form.email.value;
     const password = form.password.value;
+
+    const passwordCheck = /^(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+    if (!passwordCheck.test(password)) {
+      Swal.fire({
+        title: "Invalid Password",
+        text: "Password must be at least 6 characters long, contain at least one uppercase letter, and one lowercase letter.",
+        icon: "warning",
+      });
+      return;
+    }
 
     createUser(email, password)
       .then((result) => {
@@ -91,14 +103,28 @@ const Register = () => {
         />
 
         <label className="label text-[16px] text-black">Password</label>
-        <input
-          type="password"
-          name="password"
-          className="input w-full"
-          placeholder="Password"
-          required
-        />
-
+        <div className="relative">
+          <input
+            type={showPassword ? "text" : "password"}
+            name="password"
+            className="input w-full"
+            placeholder="Password"
+            required
+          />
+          <button
+            type="button"
+            onClick={() => {
+              setShowPassword(!showPassword);
+            }}
+            className="z-50 absolute top-2 right-4"
+          >
+            {showPassword ? (
+              <FaEyeSlash size={20}></FaEyeSlash>
+            ) : (
+              <FaEye size={20}></FaEye>
+            )}
+          </button>
+        </div>
         <button
           type="submit"
           className="w-full px-8 py-3 mt-5 font-semibold rounded-md border text-[16px]"
