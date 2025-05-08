@@ -2,6 +2,7 @@ import React, { use } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import { useParams } from "react-router";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 const EventDetails = () => {
   const { events } = use(AuthContext);
@@ -31,6 +32,9 @@ const EventDetails = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>EventNest | Event-details</title>
+      </Helmet>
       <div className="hero bg-base-200 h-full md:py-36">
         <div className="hero-content flex-col lg:flex-row">
           <img

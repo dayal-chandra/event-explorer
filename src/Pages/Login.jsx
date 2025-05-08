@@ -2,6 +2,7 @@ import React, { use } from "react";
 import { Link, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../Provider/AuthProvider";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
   const { signIn } = use(AuthContext);
@@ -33,6 +34,9 @@ const Login = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>EventNest | Login</title>
+      </Helmet>
       <form
         onSubmit={handleLogin}
         className="fieldset bg-base-200 border-base-300 rounded-box w-full max-w-sm mx-auto border py-10 px-5 my-5"
