@@ -1,12 +1,25 @@
-# React + Vite
+# Event Explorer(EventNest)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project centers around creating a platform that enables users to discover, explore, and get details about upcoming local events such as conferences, workshops, sports events, art exhibitions, and more. Users can log in, browse events, view detailed info, and leave feedback or ratings for events they attend.
 
-Currently, two official plugins are available:
+# Live link
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+dayal.assign-9.surge.sh
 
-## Expanding the ESLint configuration
+# Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+a. Users can explore events. Users can login, browse events, view details and subscribe.
+
+b. If user do not login some of our features do not allow to show information.
+
+c. Sign in and login handled through firebase authentication.
+
+# NPM packages
+
+a. tailwindcss - For styling.
+b. daisyUI - for components.
+c. firebase - for authentication.
+d. react-icons - for icons.
+e. react-router - for routing.
+f. sweetalert2 - for eye catching alert.
+g. swiper - for home screen slider.
