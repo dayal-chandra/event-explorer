@@ -1,8 +1,13 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 const Privacy = () => {
   return (
     <div className="space-y-5">
+      <Helmet>
+        <title>EventNest | Privacy Policy</title>
+      </Helmet>
+
       <div className="space-y-2">
         <p className="text-2xl font-semibold text-center"> Privacy Policy</p>
         <p className="text-center">

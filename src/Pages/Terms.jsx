@@ -1,8 +1,13 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 
 const Terms = () => {
   return (
     <div>
+      <Helmet>
+        <title>EventNest | Terms & Conditions</title>
+      </Helmet>
+
       <h1 className="text-center text-3xl font-bold py-5">
         {" "}
         Terms and Conditions

@@ -102,10 +102,10 @@ const Navbar = () => {
         <div className="w-10 rounded-full">
           {user ? (
             <img
-              className="rounded-full"
-              alt="Tailwind CSS Navbar component"
+              className="rounded-full w-10 h-10 bg-red-500"
+              alt={user.displayName}
               title={user.displayName}
-              src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
+              src={user.photoURL}
             />
           ) : (
             ""
