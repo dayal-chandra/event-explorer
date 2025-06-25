@@ -51,7 +51,7 @@ Feel free to fork the repo and raise a pull request if you’d like to contribut
 
 ## 📸 Screenshot
 
-![EventNest Screenshot](https://i.ibb.co/20SpD4Yd/Screenshot-2025-06-25-121614.png) <!-- Replace with actual screenshot path -->
+![EventNest Screenshot](https://i.ibb.co/20SpD4Yd/Screenshot-2025-06-25-121614.png)
 
 ---
 
